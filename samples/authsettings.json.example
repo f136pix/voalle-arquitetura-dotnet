@@ -1,0 +1,6 @@
+{
+    "Auth": {
+        "AuthorizeServer": "http://localhost:45700",
+        "RequireHttpsMetadata" : false
+    }
+}

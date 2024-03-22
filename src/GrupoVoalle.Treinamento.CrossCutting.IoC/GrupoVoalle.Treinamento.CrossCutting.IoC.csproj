@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\GrupoVoalle.Utility\src\GrupoVoalle.Utility\GrupoVoalle.Utility.csproj" />
+    <ProjectReference Include="..\GrupoVoalle.Treinamento.Infra\GrupoVoalle.Treinamento.Infra.csproj" />
+    <ProjectReference Include="..\GrupoVoalle.Treinamento.ExternalCommunications\GrupoVoalle.Treinamento.ExternalCommunications.csproj" />
+    <ProjectReference Include="..\..\lib\GrupoVoalle.Database.Core\src\GrupoVoalle.Database.Core\GrupoVoalle.Database.Core.csproj" />
+  </ItemGroup>
+</Project>

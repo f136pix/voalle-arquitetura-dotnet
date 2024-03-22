@@ -1,0 +1,10 @@
+{
+    "Connector": "And",
+    "Values": [
+        {
+            "PropertyName": "PaymentGateways.Active",
+            "Operation": "Equals",
+            "Value": "true"
+        }
+    ]
+}

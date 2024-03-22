@@ -1,0 +1,21 @@
+[submodule "lib/GrupoVoalle.Utility"]
+	path = lib/GrupoVoalle.Utility
+	url = git@git.syntesis.com.br:GrupoVoalle/CSharp/Libs/GrupoVoalle.Utility.git
+[submodule "lib/GrupoVoalle.Utility.DynamicFields"]
+    path = lib/GrupoVoalle.Utility.DynamicFields
+    url = git@git.syntesis.com.br:GrupoVoalle/CSharp/Libs/GrupoVoalle.Utility.DynamicFields.git
+[submodule "lib/GrupoVoalle.Domain.Core"]
+	path = lib/GrupoVoalle.Domain.Core
+	url = git@git.syntesis.com.br:GrupoVoalle/CSharp/Libs/GrupoVoalle.Domain.Core.git
+[submodule "lib/GrupoVoalle.Database.Core"]
+    path = lib/GrupoVoalle.Database.Core
+    url = git@git.syntesis.com.br:GrupoVoalle/CSharp/Libs/GrupoVoalle.Database.Core.git
+[submodule "lib/GrupoVoalle.Web.Core"]
+	path = lib/GrupoVoalle.Web.Core
+	url = git@git.syntesis.com.br:GrupoVoalle/CSharp/Libs/GrupoVoalle.Web.Core.git
+[submodule "lib/GrupoVoalle.Queues.Core"]
+    path = lib/GrupoVoalle.Queues.Core
+    url = git@git.syntesis.com.br:GrupoVoalle/CSharp/Libs/GrupoVoalle.Queues.Core.git
+[submodule "lib/GrupoVoalle.CrossCutting.Core"]
+    path = lib/GrupoVoalle.CrossCutting.Core
+    url = git@git.syntesis.com.br:GrupoVoalle/CSharp/Libs/GrupoVoalle.CrossCutting.Core.git

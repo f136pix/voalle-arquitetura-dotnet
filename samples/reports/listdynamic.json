@@ -1,0 +1,30 @@
+{
+  "definition": {
+      "reportId": "ListDynamic",
+      "params": {
+          "service": "PaymentForms",
+          "columns": [{
+              "Property": "Id",
+              "Title": "Id"
+          }, {
+              "Property": "Title",
+              "Title": "Título"
+          }]
+
+      },
+      "title": "Formas de pagamento"
+  },
+  "dataSource": {
+      "select": {
+          "properties": [{
+                  "Name": "Id",
+                  "Ref": "Id"
+              },
+              {
+                  "Name": "Title",
+                  "Ref": "Title"
+              }
+          ]
+      }
+  }
+}

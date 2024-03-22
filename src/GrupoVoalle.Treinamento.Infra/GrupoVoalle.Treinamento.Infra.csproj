@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.2" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GrupoVoalle.Treinamento.Business\GrupoVoalle.Treinamento.Business.csproj" />
+    <ProjectReference Include="..\..\lib\GrupoVoalle.Database.Core\src\GrupoVoalle.Database.Core\GrupoVoalle.Database.Core.csproj" />
+    <ProjectReference Include="..\..\lib\GrupoVoalle.Domain.Core\src\GrupoVoalle.Domain.Core\GrupoVoalle.Domain.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Interfaces\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Interfaces\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Interfaces\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Persistence\Postgres" />
+    <Folder Include="Persistence\Postgres\People" />
+  </ItemGroup>
+</Project>

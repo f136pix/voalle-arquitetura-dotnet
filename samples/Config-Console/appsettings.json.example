@@ -1,0 +1,50 @@
+{
+  "Kestrel": {
+    "Endpoints": {
+      "Https": {
+        "Url": "https://*:45702",
+        "Protocols": "Http1AndHttp2",
+        "Certificate": {
+          "Path": "Cert/synclient.pfx",
+          "AllowInvalid": true
+        }
+      }
+    }
+  },
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Information",
+      "System": "Information",
+      "Microsoft": "Information"
+    }
+  },
+  "AllowedHosts": "*",
+  "EmailNotifications": {
+    "SMTPServerTo": "mail.syntesis.com.br",
+    "SMTPPort": "587",
+    "Account": "noreplysynsuite@synsuite.com.br",
+    "Pass": "Synsuite!@N@reply",
+    "To": "desenvolvimento@syntesis.com.br",
+    "TemplatePath": "../../lib/Syntesis.SharedEntities/Templates/"
+  },
+  "ProductionEnvironment": false,
+  "Synsuite": {
+    "IdBinQuery": "598c28fe-f6c9-447c-9364-cff389c8036f",
+    "KeyBinQuery": "ZnwnerKRqiKY9CHa2i7zoFpExziBOgc18zgk4604",
+    "ProtocolsEnvironmentUrl": "http://h12.synsuite.com.br/",
+    "Username": "nicola.sanchez",
+    "Password": "332211",
+    "ClientId": "5_5vshix74vb8kogw0so4sockws4040wkwss0w8osw4s0c0gws80",
+    "ClientSecret": "4h04d2w4fvokwwcw84g0w8gw4c4gcso04ggog0k0sw808okgg0",
+    "GrantType": "password",
+    "VerifyToken": "TWpNMU9EYzVaakk1T0dSaU1USmxaalprWldFd00ySTFZV1JsTTJRMFptUT06WVVkV2RHTkVRWGROZWxGNFdIcEpkMDFVWjNoTmFrRXlXREpXTUdOM1BUMD06WlRoa01qTTFZamswWXpsaU5ETm1aRGczTURsa01qWTJZekF4TUdNM01HVT0="
+  },
+  "ProtocolGeneration": {
+    "CompanyPlaceId": 1,
+    "IncidentStatusId": 1,
+    "PersonId": 25,
+    "ServiceLevelAgreementId": 11,
+    "IncidentTypeId": 1005
+  }
+}

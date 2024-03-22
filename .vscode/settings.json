@@ -1,0 +1,12 @@
+{
+  "files.exclude": {
+    "sql/*": false
+  },
+  "editor.formatOnSave": true,
+  "dotnet.defaultSolution": "GrupoVoalle.Treinamento.sln",
+  "cSpell.words": [
+  ],
+  "editor.suggest.showReferences": false,
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "omnisharp.useModernNet": false
+}

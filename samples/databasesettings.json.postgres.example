@@ -1,0 +1,8 @@
+{
+    "Data": {
+        "DefaultConnection": {
+            "Provider": "Postgresql",
+            "ConnectionString": "Server=trocarserver;Database=trocardatabase;User Id=syntesisus;Password=syntesis#1#2;Port=5432;Search Path=erp;Application Name=DOTNET"
+        }
+    }
+}

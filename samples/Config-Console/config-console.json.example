@@ -1,0 +1,6 @@
+{
+    "Data" : [
+        { "Host" : "host1", "Db" : "db1" },
+        { "Host" : "host2", "Db" : "db2" }
+    ]
+}

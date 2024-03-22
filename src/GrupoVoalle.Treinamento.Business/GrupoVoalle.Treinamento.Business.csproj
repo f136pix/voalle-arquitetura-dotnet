@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <AssemblyName>GrupoVoalle.Treinamento</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\GrupoVoalle.CrossCutting.Core\src\GrupoVoalle.CrossCutting.Core\GrupoVoalle.CrossCutting.Core.csproj" />
+    <ProjectReference Include="..\..\lib\GrupoVoalle.Domain.Core\src\GrupoVoalle.Domain.Core\GrupoVoalle.Domain.Core.csproj" />
+    <ProjectReference Include="..\GrupoVoalle.Treinamento.RenderHtml\GrupoVoalle.Treinamento.RenderHtml.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EnterpriseLibrary.Validation.NetCore" Version="6.0.1312" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Business\Interfaces\Queues" />
+    <Folder Include="Business\Services" />
+    <Folder Include="Cqrs" />
+    <Folder Include="Primitives\People" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "build-api",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/src/GrupoVoalle.Treinamento.Presentation/GrupoVoalle.Treinamento.Presentation.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    },
+
+    {
+      "label": "build-works",
+      "command": "dotnet",
+      "type": "process",
+      "args": [
+        "build",
+        "${workspaceFolder}/src/GrupoVoalle.Treinamento.Consoles.Works/GrupoVoalle.Treinamento.Consoles.Works.csproj"
+      ],
+      "problemMatcher": "$msCompile"
+    }
+  ]
+}

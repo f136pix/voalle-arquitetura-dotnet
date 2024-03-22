@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="RestSharp" Version="110.2.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\lib\GrupoVoalle.Queues.Core\src\GrupoVoalle.Queues.Core\GrupoVoalle.Queues.Core.csproj" />
+    <ProjectReference Include="..\GrupoVoalle.Treinamento.Business\GrupoVoalle.Treinamento.Business.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Queues\Publishers" />
+  </ItemGroup>
+</Project>
