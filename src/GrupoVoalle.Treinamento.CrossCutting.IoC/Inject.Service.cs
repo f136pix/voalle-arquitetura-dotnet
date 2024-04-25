@@ -1,3 +1,4 @@
+using GrupoVoalle.Base.Business.Primitives.People;
 using GrupoVoalle.Treinamento.Business.Primitives.LogItems;
 using GrupoVoalle.Treinamento.Business.Primitives.LogTables;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +19,7 @@ namespace GrupoVoalle.Treinamento.CrossCutting.IoC
         {
             services.AddScoped<ILogItemsService, LogItemsService>();
             services.AddScoped<ILogTablesService, LogTablesService>();
+            services.AddScoped<IPeopleService, PeopleService>();
         }
     }
 }

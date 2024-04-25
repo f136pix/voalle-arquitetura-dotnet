@@ -1,3 +1,6 @@
+using GrupoVoalle.Base.Business.Cqrs.People;
+using GrupoVoalle.Utility.Messages;
+using MediatR;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace GrupoVoalle.Treinamento.CrossCutting.IoC
@@ -14,6 +17,7 @@ namespace GrupoVoalle.Treinamento.CrossCutting.IoC
     {
         private static void RegisterCommand(IServiceCollection services)
         {
+            services.AddScoped<IRequestHandler<PeopleCreateCommand, ResponseMessage>, PeopleCommandHandler>();
         }
     }
 }

@@ -22,6 +22,5 @@
     <Folder Include="Business\Interfaces\Queues" />
     <Folder Include="Business\Services" />
     <Folder Include="Cqrs" />
-    <Folder Include="Primitives\People" />
   </ItemGroup>
 </Project>
