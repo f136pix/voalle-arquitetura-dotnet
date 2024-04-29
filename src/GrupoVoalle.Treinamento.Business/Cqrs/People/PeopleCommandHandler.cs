@@ -10,7 +10,11 @@ namespace GrupoVoalle.Base.Business.Cqrs.People
 {
     public class PeopleCommandHandler :
         CommandHandler,
-        IRequestHandler<PeopleCreateCommand, ResponseMessage>
+        IRequestHandler<PeopleCreateCommand, ResponseMessage>,
+        IRequestHandler<PeopleUpdateCommand, ResponseMessage>,
+        IRequestHandler<PeopleDeleteCommand, ResponseMessage>,
+        IRequestHandler<PeopleGetCommand, ResponseMessage>,
+        IRequestHandler<PeopleGetPagedCommand, ResponseMessage>
     {
         private readonly IPeopleService _service;
 
@@ -25,12 +29,46 @@ namespace GrupoVoalle.Base.Business.Cqrs.People
         }
 
         // realiza a chamada para o serviço de criação de pessoa na camada de domain
+        // tem delegado para si o tratamento the PeopleCreateCommand
         public async Task<ResponseMessage> Handle(PeopleCreateCommand request, CancellationToken cancellationToken)
         {
-            var resData = await _service.CreateAsync(request);
+            var retData = await _service.CreateAsync(request);
 
-            var res = new ResponseMessage(resData);
-            return res;
+            var ret = new ResponseMessage(retData);
+            return ret;
+        }
+
+
+        public async Task<ResponseMessage> Handle(PeopleUpdateCommand request, CancellationToken cancellationToken)
+        {
+            var retData = await _service.UpdateAsync(request);
+
+            var ret = new ResponseMessage(retData);
+            return ret;
+        }
+
+        public async Task<ResponseMessage> Handle(PeopleDeleteCommand request, CancellationToken cancellationToken)
+        {
+            var retData = await _service.DeleteAsync(request.Id);
+            
+            var ret = new ResponseMessage(retData);
+            return ret;
+        }
+
+        public async Task<ResponseMessage> Handle(PeopleGetCommand request, CancellationToken cancellationToken)
+        {
+            var retData = await _service.GetAsync(request.Id);
+            
+            var ret = new ResponseMessage(retData);
+            return ret;
+        }
+        
+        public async Task<ResponseMessage> Handle(PeopleGetPagedCommand request, CancellationToken cancellationToken)
+        {
+            var retData = await _service.GetPagedAsync(request);
+            
+            var ret = new ResponseMessage(retData);
+            return ret;
         }
     }
 }

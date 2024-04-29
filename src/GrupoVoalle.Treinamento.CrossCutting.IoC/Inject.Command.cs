@@ -18,6 +18,10 @@ namespace GrupoVoalle.Treinamento.CrossCutting.IoC
         private static void RegisterCommand(IServiceCollection services)
         {
             services.AddScoped<IRequestHandler<PeopleCreateCommand, ResponseMessage>, PeopleCommandHandler>();
+            services.AddScoped<IRequestHandler<PeopleUpdateCommand, ResponseMessage>, PeopleCommandHandler>();
+            services.AddScoped<IRequestHandler<PeopleDeleteCommand, ResponseMessage>, PeopleCommandHandler>();
+            services.AddScoped<IRequestHandler<PeopleGetCommand, ResponseMessage>, PeopleCommandHandler>();
+            services.AddScoped<IRequestHandler<PeopleGetPagedCommand, ResponseMessage>, PeopleCommandHandler>();
         }
     }
 }
