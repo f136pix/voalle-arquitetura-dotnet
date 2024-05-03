@@ -28,6 +28,5 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Persistence\Postgres" />
-    <Folder Include="Persistence\Postgres\People" />
   </ItemGroup>
 </Project>

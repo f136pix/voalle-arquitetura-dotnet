@@ -88,7 +88,7 @@ public class PeopleController : WebApiMediatorControllerBase
     }
 
     [HttpGet]
-    public async Task<IActionResult> GetAsync([FromQuery] DataSourceRequest request)
+    public async Task<IActionResult> GetAsync([FromQuery] DataSourceRequest request)    
     {
         return await DefaultActionResult(async () =>
         {

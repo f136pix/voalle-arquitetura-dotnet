@@ -1,3 +1,5 @@
+using GrupoVoalle.Base.Business.Primitives.People;
+using GrupoVoalle.Base.Infra.Persistence.Postgres.People;
 using GrupoVoalle.Treinamento.Business.Primitives.LogItems;
 using GrupoVoalle.Treinamento.Business.Primitives.LogTables;
 using GrupoVoalle.Treinamento.Infra.Persistence.Postgres.LogItems;
@@ -18,6 +20,7 @@ namespace GrupoVoalle.Treinamento.CrossCutting.IoC
     {
         private static void RegisterRepository(IServiceCollection services)
         {
+            services.AddScoped<IPeopleRepository, PeopleRepository>();
             services.AddScoped<ILogItemsRepository, LogItemsRepository>();
             services.AddScoped<ILogTablesRepository, LogTablesRepository>();
         }
